@@ -175,6 +175,12 @@ memory-palace mcp serve                 # MCP SSE on :8765
 
 1. Fork → 2. Add `skills/your-skill/SKILL.md` → 3. Follow [Skill Authoring Guide](docs/skill-authoring.md) → 4. PR
 
+## Acknowledgments
+
+- [CCBuddy](https://github.com/vincentyangch/CCBuddy) — The original Claude Code companion that inspired Link Buddy's architecture
+- [UltimateSearchSkill](https://github.com/ckckck/UltimateSearchSkill) — Search methodology and evidence standards that shaped the grok-search skill
+- [Memory Palace (upstream)](https://github.com/AGI-is-going-to-arrive/Memory-Palace) — The original Memory Palace project that our fork builds upon
+
 ## License
 
 MIT

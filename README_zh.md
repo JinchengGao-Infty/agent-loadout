@@ -165,6 +165,12 @@ memory-palace mcp serve      # MCP SSE :8765
 
 Fork → 添加 `skills/your-skill/SKILL.md` → 参考[技能编写指南](docs/skill-authoring.md) → PR
 
+## 致谢
+
+- [CCBuddy](https://github.com/vincentyangch/CCBuddy) — Link Buddy 架构灵感来源
+- [UltimateSearchSkill](https://github.com/ckckck/UltimateSearchSkill) — grok-search 技能的搜索方法论和证据标准参考
+- [Memory Palace (上游)](https://github.com/AGI-is-going-to-arrive/Memory-Palace) — 我们 fork 的 Memory Palace 原始项目
+
 ## 许可
 
 MIT
