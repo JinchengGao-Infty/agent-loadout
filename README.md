@@ -155,6 +155,15 @@ memory-palace mcp serve                 # MCP SSE on :8765
 | Codex | ✅ | ✅ | Project-level |
 | Cursor | ⚠️ | ✅ | Skills via project rules |
 
+## Related Projects
+
+| Project | Description |
+|---------|-------------|
+| [Link Buddy](https://github.com/JinchengGao-Infty/link-buddy) | AI assistant that lives in Telegram — powered by Claude, with Memory Palace integration, Apple ecosystem access (Calendar/Reminders), and all the skills from this repo. Think of it as Agent Loadout deployed as a always-on personal assistant. |
+| [Memory Palace](https://github.com/JinchengGao-Infty/Memory-Palace) | Durable, semantically-searchable memory for AI agents. The brain behind persistent context. |
+| [Hydra](https://github.com/JinchengGao-Infty/hydra) | Multi-agent parallel development via git worktrees + tmux. |
+| [FWMA](https://github.com/JinchengGao-Infty/FWMA) | AI Parliament systematic literature review — multi-agent debate for rigorous paper scoring. |
+
 ## Docs
 
 - [SETUP.md](SETUP.md) — Agent self-configuration

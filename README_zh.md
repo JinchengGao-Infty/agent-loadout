@@ -145,6 +145,15 @@ memory-palace mcp serve      # MCP SSE :8765
 | Codex | ✅ | ✅ | 项目级 |
 | Cursor | ⚠️ | ✅ | 技能通过 rules |
 
+## 相关项目
+
+| 项目 | 说明 |
+|------|------|
+| [Link Buddy](https://github.com/JinchengGao-Infty/link-buddy) | 住在 Telegram 里的 AI 助手 — 基于 Claude，集成 Memory Palace、Apple 生态（日历/提醒事项），搭载本仓库的全部技能。可以理解为 Agent Loadout 的 always-on 部署形态。 |
+| [Memory Palace](https://github.com/JinchengGao-Infty/Memory-Palace) | AI Agent 的持久化语义记忆系统。 |
+| [Hydra](https://github.com/JinchengGao-Infty/hydra) | 多 Agent 并行开发（git worktree + tmux）。 |
+| [FWMA](https://github.com/JinchengGao-Infty/FWMA) | AI 议会式系统文献综述 — 多 Agent 辩论打分。 |
+
 ## 文档
 
 - [SETUP.md](SETUP.md) — Agent 自配置
