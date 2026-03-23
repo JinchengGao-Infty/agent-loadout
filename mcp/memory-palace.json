@@ -1,0 +1,23 @@
+{
+  "name": "memory-palace",
+  "description": "Durable, semantically-searchable memory for AI agents. Persists knowledge across sessions with write guards and hierarchical organization.",
+  "setup": "See https://github.com/JinchengGao-Infty/Memory-Palace for installation",
+  "requirements": {
+    "server": "Memory Palace server running locally",
+    "embedding": "Ollama with snowflake-arctic-embed2 model (recommended)"
+  },
+  "claude-code": {
+    "type": "sse",
+    "url": "http://localhost:8765/sse",
+    "headers": {
+      "X-MCP-API-Key": "memory-palace-local"
+    }
+  },
+  "generic": {
+    "type": "sse",
+    "url": "http://localhost:8765/sse",
+    "headers": {
+      "X-MCP-API-Key": "memory-palace-local"
+    }
+  }
+}

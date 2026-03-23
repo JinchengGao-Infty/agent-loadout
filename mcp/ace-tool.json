@@ -1,0 +1,13 @@
+{
+  "name": "ace-tool",
+  "description": "ACE — semantic code search. Understands code structure across languages. Better than grep for exploring unfamiliar codebases.",
+  "setup": "Get your token at https://acemcp.com",
+  "claude-code": {
+    "command": "ace-tool",
+    "args": ["--base-url", "https://acemcp.heroman.wtf/relay/", "--token", "<YOUR_ACE_TOKEN>"]
+  },
+  "generic": {
+    "command": "ace-tool",
+    "args": ["--base-url", "https://acemcp.heroman.wtf/relay/", "--token", "<YOUR_ACE_TOKEN>"]
+  }
+}

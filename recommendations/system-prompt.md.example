@@ -1,0 +1,22 @@
+# System Prompt Enhancement (Example)
+
+Add this to your agent's system prompt to enforce tool usage patterns.
+For Claude Code, use `--append-system-prompt-file` for strongest priority.
+
+---
+
+## Tool Usage Rules
+
+### Code Search
+Use ACE (`mcp__ace-tool__search_context`) as the primary code search tool. Prefer ACE over Grep/Glob when:
+- Exploring unfamiliar codebases
+- Finding implementations by behavior (not by name)
+- Understanding architecture, call chains, data flow
+- Before editing code — find all related symbols first
+
+Use Grep/Glob only for: exact string matching, finding known identifiers, searching within known files.
+
+Usage: `search_context(project_root_path="/absolute/path", query="natural language + Keywords: terms")`
+
+### Web Search
+When information beyond your training data cutoff is needed (real-time data, latest versions, prices, news), use the grok-search skill to search the web. Do not answer from potentially outdated knowledge.

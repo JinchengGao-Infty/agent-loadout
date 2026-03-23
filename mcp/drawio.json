@@ -1,0 +1,13 @@
+{
+  "name": "drawio",
+  "description": "Create and edit draw.io diagrams programmatically.",
+  "setup": "npm install -g @drawio/mcp@latest",
+  "claude-code": {
+    "command": "npx",
+    "args": ["@drawio/mcp@latest"]
+  },
+  "generic": {
+    "command": "npx",
+    "args": ["@drawio/mcp@latest"]
+  }
+}

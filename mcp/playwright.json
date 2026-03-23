@@ -1,0 +1,13 @@
+{
+  "name": "playwright",
+  "description": "Browser automation — navigate, click, fill forms, take screenshots, scrape content.",
+  "setup": "npm install -g @playwright/mcp@latest",
+  "claude-code": {
+    "command": "npx",
+    "args": ["@playwright/mcp@latest"]
+  },
+  "generic": {
+    "command": "npx",
+    "args": ["@playwright/mcp@latest"]
+  }
+}
