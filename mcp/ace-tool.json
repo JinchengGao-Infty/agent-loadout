@@ -1,13 +1,13 @@
 {
   "name": "ace-tool",
   "description": "ACE — semantic code search. Understands code structure across languages. Better than grep for exploring unfamiliar codebases.",
-  "setup": "Self-host the relay: https://github.com/heromantf/acemcp-relay (Go backend) + https://github.com/heromantf/acemcp-relay-frontend (token management UI). Then install the CLI client: npm i -g ace-tool",
+  "setup": "1) Register at https://augmentcode.com (free account works — code search does not consume credits). 2) Get your token: write ~/.augment/session.json with {accessToken, tenantURL, scopes:[\"read\",\"write\"]}. 3) npm i -g ace-tool. Optional: self-host relay via https://github.com/heromantf/acemcp-relay for multi-user/team use.",
   "claude-code": {
     "command": "ace-tool",
-    "args": ["--base-url", "<YOUR_RELAY_URL>", "--token", "<YOUR_ACE_TOKEN>"]
+    "args": ["--base-url", "<YOUR_AUGMENT_TENANT_URL>", "--token", "<YOUR_AUGMENT_ACCESS_TOKEN>"]
   },
   "generic": {
     "command": "ace-tool",
-    "args": ["--base-url", "<YOUR_RELAY_URL>", "--token", "<YOUR_ACE_TOKEN>"]
+    "args": ["--base-url", "<YOUR_AUGMENT_TENANT_URL>", "--token", "<YOUR_AUGMENT_ACCESS_TOKEN>"]
   }
 }

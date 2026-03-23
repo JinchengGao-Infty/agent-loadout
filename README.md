@@ -76,8 +76,8 @@ cp -r agent-loadout/skills/* .codex/skills/              # Codex
 <summary><b>Claude Code</b></summary>
 
 ```bash
-# ACE semantic code search (self-host relay first, see below)
-claude mcp add ace-tool -- ace-tool --base-url "<YOUR_RELAY_URL>" --token "<YOUR_ACE_TOKEN>"
+# ACE semantic code search (free account works — code search doesn't consume credits)
+claude mcp add ace-tool -- ace-tool --base-url "<YOUR_AUGMENT_TENANT_URL>" --token "<YOUR_AUGMENT_ACCESS_TOKEN>"
 
 # Playwright browser automation
 claude mcp add playwright -- npx @playwright/mcp@latest
@@ -141,7 +141,7 @@ memory-palace mcp serve                 # MCP SSE on :8765
 
 | MCP | What It Does | Setup |
 |-----|-------------|-------|
-| [ace-tool](mcp/ace-tool.json) | Semantic code search | Self-host [relay](https://github.com/heromantf/acemcp-relay) + `npm i -g ace-tool` |
+| [ace-tool](mcp/ace-tool.json) | Semantic code search | Free [Augment](https://augmentcode.com) account + `npm i -g ace-tool` |
 | [playwright](mcp/playwright.json) | Browser automation | `npx @playwright/mcp@latest` |
 | [drawio](mcp/drawio.json) | Diagrams | `npx @drawio/mcp@latest` |
 | [memory-palace](mcp/memory-palace.json) | Persistent memory | Self-hosted |

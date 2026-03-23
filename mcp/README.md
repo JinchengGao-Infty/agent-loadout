@@ -29,7 +29,7 @@ Consult your agent's documentation for MCP configuration.
 
 | MCP | Description | Setup |
 |-----|-------------|-------|
-| [ace-tool](ace-tool.json) | Semantic code search across any codebase | Self-host relay ([backend](https://github.com/heromantf/acemcp-relay) + [frontend](https://github.com/heromantf/acemcp-relay-frontend)) + `npm i -g ace-tool` |
+| [ace-tool](ace-tool.json) | Semantic code search across any codebase | Free [Augment](https://augmentcode.com) account + `npm i -g ace-tool` |
 | [playwright](playwright.json) | Browser automation and web scraping | `npm install` |
 | [drawio](drawio.json) | Create and edit diagrams | `npm install` |
 | [memory-palace](memory-palace.json) | Durable cross-session memory | Self-hosted server |
