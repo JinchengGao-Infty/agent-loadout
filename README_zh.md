@@ -74,7 +74,7 @@ cp -r agent-loadout/skills/* .codex/skills/              # Codex
 <summary><b>Claude Code</b></summary>
 
 ```bash
-claude mcp add ace-tool -- ace-tool --base-url "https://acemcp.heroman.wtf/relay/" --token "<你的TOKEN>"
+claude mcp add ace-tool -- ace-tool --base-url "<你的RELAY地址>" --token "<你的TOKEN>"
 claude mcp add playwright -- npx @playwright/mcp@latest
 claude mcp add drawio -- npx @drawio/mcp@latest
 claude mcp add memory-palace --type sse --url http://localhost:8765/sse  # 可选
@@ -131,7 +131,7 @@ memory-palace mcp serve      # MCP SSE :8765
 
 | MCP | 功能 | 安装 |
 |-----|------|------|
-| [ace-tool](mcp/ace-tool.json) | 语义代码搜索 | `npm i -g ace-tool` + token |
+| [ace-tool](mcp/ace-tool.json) | 语义代码搜索 | 自部署 [relay](https://github.com/heromantf/acemcp-relay) + `npm i -g ace-tool` |
 | [playwright](mcp/playwright.json) | 浏览器自动化 | `npx @playwright/mcp@latest` |
 | [drawio](mcp/drawio.json) | 绘图 | `npx @drawio/mcp@latest` |
 | [memory-palace](mcp/memory-palace.json) | 持久记忆 | 自部署 |

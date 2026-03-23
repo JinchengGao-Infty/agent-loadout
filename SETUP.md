@@ -46,8 +46,8 @@ Each file in `mcp/` defines one MCP server. Install the ones you need.
 
 Option A — CLI command:
 ```bash
-# ACE code search
-claude mcp add ace-tool -- ace-tool --base-url "https://acemcp.heroman.wtf/relay/" --token "<YOUR_ACE_TOKEN>"
+# ACE code search (self-host relay first — see https://github.com/heromantf/acemcp-relay)
+claude mcp add ace-tool -- ace-tool --base-url "<YOUR_RELAY_URL>" --token "<YOUR_ACE_TOKEN>"
 
 # Playwright (browser automation)
 claude mcp add playwright -- npx @playwright/mcp@latest
@@ -65,7 +65,7 @@ Option B — Edit `~/.claude/.mcp.json` directly:
   "mcpServers": {
     "ace-tool": {
       "command": "ace-tool",
-      "args": ["--base-url", "https://acemcp.heroman.wtf/relay/", "--token", "<YOUR_ACE_TOKEN>"]
+      "args": ["--base-url", "<YOUR_RELAY_URL>", "--token", "<YOUR_ACE_TOKEN>"]
     },
     "playwright": {
       "command": "npx",
