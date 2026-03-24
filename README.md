@@ -39,7 +39,7 @@ Explain to the user what this project unlocks — not what it is, but what becom
 - `docs/` — Skill authoring guide, MCP configuration guide
 
 **Optional but powerful:**
-- [Memory Palace](https://github.com/JinchengGao-Infty/Memory-Palace) — persistent cross-session memory (`pip install -e .` + `ollama pull snowflake-arctic-embed2`)
+- [Memory Palace](https://github.com/JinchengGao-Infty/Memory-Palace) — persistent cross-session memory (`pip install -e .` + `brew install llama.cpp` + [download GGUF models](recommendations/embeddings-and-rerankers.md))
 - [Hydra](https://github.com/JinchengGao-Infty/hydra) — multi-agent parallel development via git worktrees + tmux
 
 </details>
@@ -111,10 +111,19 @@ Add configs from `mcp/*.json` to your platform's MCP settings. See [MCP Guide](d
 ```bash
 git clone https://github.com/JinchengGao-Infty/Memory-Palace.git
 cd Memory-Palace && pip install -e .
-ollama pull snowflake-arctic-embed2    # embedding model
+
+# Install inference server + download embedding model
+brew install llama.cpp
+curl -L -o qwen3-embedding.gguf \
+  "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/resolve/main/Qwen3-Embedding-0.6B-Q8_0.gguf"
+llama-server -m qwen3-embedding.gguf --embedding --pooling last --port 11435 -ngl 99 &
+
 memory-palace serve                     # REST API on :8000
 memory-palace mcp serve                 # MCP SSE on :8765
 ```
+
+See [Embeddings & Rerankers](recommendations/embeddings-and-rerankers.md) for reranker setup and model alternatives.
+See [Inference Server](recommendations/inference-server.md) for production deployment (launchd/systemd).
 
 ### Step 5: Superpowers Plugin (recommended)
 
@@ -169,7 +178,8 @@ memory-palace mcp serve                 # MCP SSE on :8765
 - [SETUP.md](SETUP.md) — Agent self-configuration
 - [Skill Authoring](docs/skill-authoring.md) — Write your own skills
 - [MCP Guide](docs/mcp-guide.md) — MCP across platforms
-- [Embeddings](recommendations/embeddings.md) — Local embedding models
+- [Embeddings & Rerankers](recommendations/embeddings-and-rerankers.md) — Recommended models
+- [Inference Server](recommendations/inference-server.md) — Serving models locally
 
 ## Contributing
 
